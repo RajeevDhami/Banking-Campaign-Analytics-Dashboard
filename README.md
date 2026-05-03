@@ -362,20 +362,26 @@ Built for operational performance monitoring.
 The solution includes engineered DAX measures designed for enterprise KPI tracking.
 
 ```DAX
-Subscription Rate = 
+Overall Conversion Rate = 
 DIVIDE(
-    CALCULATE(COUNTROWS(bank), bank[y] = "yes"),
-    COUNTROWS(bank)
+    [Total Subscritption],
+    [Total Customers Contacted],
+    0
 )
 
-High Risk Customers = 
+High Risk Customer = 
 CALCULATE(
-    COUNTROWS(bank),
-    bank[default] = "yes"
+    COUNTROWS(banking_analytical_dataset),
+    banking_analytical_dataset[Risk Level] = "High Risk"
 )
 
-Average Call Duration = 
-AVERAGE(bank[duration])
+Average Call Duration Format = 
+VAR AvgSeconds = AVERAGE(banking_analytical_dataset[call_duration_seconds])
+VAR Minutes = INT(AvgSeconds / 60)
+VAR Seconds = MOD(AvgSeconds, 60)
+RETURN
+FORMAT(Minutes, "00") & ":" &
+FORMAT(Seconds, "00")
 ```
 
 Additional KPI logic was optimized for:
@@ -678,6 +684,25 @@ The emphasis was placed on:
 * Decision-oriented analytics
 
 The final solution simulates how modern banks can leverage analytics to improve operational efficiency, customer targeting, and campaign performance through data-driven decision-making.
+
+---
+
+# 👨‍💻 Author
+
+## Rajeev Dhami
+
+### Aspiring Data Analyst | Power BI Developer | Banking Analytics Enthusiast
+
+Passionate about transforming raw business data into strategic decision intelligence through analytics, visualization, and enterprise reporting solutions.
+
+### Core Focus Areas
+
+* 📊 Power BI & Dashboard Engineering
+* 🧮 Business Intelligence & KPI Design
+* 🏦 Banking & Financial Analytics
+* 🐍 Python for Data Analysis
+* 🗄️ SQL for Data Transformation
+* 📈 Decision-Oriented Storytelling
 
 ---
 
