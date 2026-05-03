@@ -488,25 +488,30 @@ Based on analytical findings, the following recommendations were derived:
 
 ## 🏦 Executive Overview Dashboard
 
-<img width="100%" src="ADD_EXECUTIVE_OVERVIEW_SCREENSHOT_HERE" />
+<img width="100%" src="<img width="1518" height="850" alt="executive_overview" src="https://github.com/user-attachments/assets/c45bb743-fdaf-4a0b-8f8e-ded28597081c" />
+
+
 
 ---
 
 ## 👥 Customer & Occupational Intelligence Dashboard
 
-<img width="100%" src="ADD_CUSTOMER_INTELLIGENCE_SCREENSHOT_HERE" />
+<img width="100%" src="<img width="1515" height="862" alt="customer_intelligence" src="https://github.com/user-attachments/assets/5356c13d-6b4f-4256-a9f6-c1f602b0cb34" />
+
 
 ---
 
 ## 📞 Engagement & Contact Intelligence Dashboard
 
-<img width="100%" src="ADD_ENGAGEMENT_INTELLIGENCE_SCREENSHOT_HERE" />
+<img width="100%" src="<img width="1520" height="855" alt="engagement_intelligence" src="https://github.com/user-attachments/assets/21e60dc6-8b35-4d21-a15f-63bc32c2e6f8" />
+
 
 ---
 
 ## ⚠️ Relationship & Risk Intelligence Dashboard
 
-<img width="100%" src="ADD_RISK_INTELLIGENCE_SCREENSHOT_HERE" />
+<img width="100%" src="<img width="1515" height="852" alt="relationship_risk_intelligence" src="https://github.com/user-attachments/assets/b7903914-e897-405e-9ebd-71e3ce47b02a" />
+
 
 </div>
 
