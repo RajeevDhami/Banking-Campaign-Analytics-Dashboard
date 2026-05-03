@@ -15,16 +15,6 @@
 
 ---
 
-# 🏦 Enterprise Banking Customer Intelligence & Campaign Analytics Platform
-
-<div align="center">
-
-![Power BI](https://img.shields.io/badge/Power%20BI-Enterprise%20Analytics-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-Data%20Engineering-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Statistical%20Analysis-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Banking](https://img.shields.io/badge/Domain-Banking%20Intelligence-0A66C2?style=for-the-badge)
-![Analytics](https://img.shields.io/badge/Focus-Decision%20Intelligence-success?style=for-the-badge)
-
 # 📊 Enterprise-Grade Banking Intelligence Solution
 
 ### Customer Segmentation • Campaign Optimization • Risk Intelligence • Decision Analytics
