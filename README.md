@@ -15,14 +15,6 @@
 
 ---
 
-# 📊 Enterprise-Grade Banking Intelligence Solution
-
-### Customer Segmentation • Campaign Optimization • Risk Intelligence • Decision Analytics
-
-</div>
-
----
-
 # 📑 Table of Contents
 
 * [📌 Executive Summary](#-executive-summary)
@@ -128,6 +120,8 @@ The analytics solution was designed to answer critical business questions:
 
 # 🛠️ Enterprise Analytics Stack
 
+Each technology in the stack was selected to simulate a scalable enterprise analytics workflow, enabling efficient data transformation, statistical analysis, KPI engineering, and executive-level reporting across banking intelligence operations.
+
 | Layer                | Technology           | Purpose                                   |
 | -------------------- | -------------------- | ----------------------------------------- |
 | 📊 BI Layer          | Power BI             | Enterprise dashboarding & KPI reporting   |
@@ -209,19 +203,17 @@ Examples:
 
 # ⚠️ Edge Case Handling
 
-A major focus of the project was ensuring enterprise-grade robustness.
+A major focus of the project was ensuring analytical reliability during KPI engineering, segmentation analysis, and dashboard development.
 
 ## Edge Cases Addressed
 
 | Edge Case                                       | Handling Strategy                                   |
 | ----------------------------------------------- | --------------------------------------------------- |
-| Customers with unknown job category             | Segmented separately to avoid analytical distortion |
-| Extremely long call durations                   | Outlier validation before KPI computation           |
-| Customers without previous campaign interaction | Isolated for campaign dependency analysis           |
-| Unknown education status                        | Included in controlled segmentation                 |
-| Simultaneous loan combinations                  | Risk categorization logic applied                   |
-| Sparse demographic segments                     | Distribution validation performed                   |
-| Highly skewed campaign metrics                  | Statistical normalization considerations applied    |
+| Customers with unknown job category             | Segmented separately during customer analysis       |
+| Extremely long call durations                   | Reviewed during outlier and engagement analysis     |
+| Customers without previous campaign interaction | Evaluated separately in previous campaign analysis  |
+| Unknown education status                        | Retained as a separate category during segmentation |
+| Sparse demographic segments                     | Distribution impact reviewed during analysis        |
 
 This prevents misleading conclusions and improves reliability of business insights.
 
@@ -231,35 +223,72 @@ This prevents misleading conclusions and improves reliability of business insigh
 
 One of the core differentiators of this project is the inclusion of statistical reasoning instead of relying solely on dashboard visualization.
 
-## Hypothesis Testing Performed
+## 1️⃣ Contact Fatigue Hypothesis Test
 
-### 1️⃣ Call Duration vs Subscription Success
+### Mann–Whitney U Test
 
-#### Hypothesis
+This test evaluates whether the distribution of campaign contact frequency differs significantly between subscribed and non-subscribed customers.
 
-* **H₀:** Call duration has no significant relationship with subscription outcome.
-* **H₁:** Longer call durations significantly improve subscription probability.
+### 📌 Business Objective
 
-### 2️⃣ Loan Status vs Campaign Conversion
+Determine whether excessive campaign outreach negatively impacts customer conversion probability.
 
-#### Hypothesis
+### 1.1️⃣ Contact Fatigue Threshold Analysis
 
-* **H₀:** Loan status does not impact conversion.
-* **H₁:** Loan ownership influences customer conversion behavior.
+Threshold analysis was performed to identify the approximate contact frequency level where campaign effectiveness begins to decline.
 
-### 3️⃣ Age Group vs Subscription Behavior
+This helps support:
 
-#### Hypothesis
+* Outreach optimization
+* Campaign efficiency improvement
+* Reduction of customer fatigue risk
+* Better operational resource allocation
 
-* **H₀:** Age groups behave similarly.
-* **H₁:** Certain age groups demonstrate statistically different conversion patterns.
+---
 
-### 4️⃣ Credit Default Impact Analysis
+## 2️⃣ Engagement Duration Hypothesis Test
 
-#### Hypothesis
+### 2.1️⃣ Independent T-Test
 
-* **H₀:** Credit default status does not affect campaign outcomes.
-* **H₁:** Default customers show different response behavior.
+This test evaluates whether subscribed customers have significantly different call durations compared to non-subscribed customers.
+
+### 📌 Business Hypothesis
+
+Longer customer interactions are associated with stronger engagement and higher subscription probability.
+
+### 2.2️⃣ Engagement Threshold Analysis
+
+Threshold analysis was conducted to identify engagement duration ranges associated with higher conversion probability.
+
+This supports:
+
+* Call-center performance optimization
+* Customer engagement benchmarking
+* Sales interaction quality analysis
+* Campaign effectiveness evaluation
+
+---
+
+## 3️⃣ Previous Success vs Subscription Test
+
+### Chi-Square Test of Independence
+
+This test evaluates whether previous campaign outcomes are associated with future subscription behavior.
+
+### 📌 Business Hypothesis
+
+Customers who previously responded successfully to banking campaigns are more likely to subscribe again in future campaigns due to existing trust, familiarity, and positive engagement history.
+
+### 3.1️⃣ Previous Success Conversion Uplift Analysis
+
+Conversion uplift analysis was conducted to measure how previous successful interactions influence future campaign conversion behavior.
+
+This helps identify:
+
+* High-potential customer segments
+* Retargeting opportunities
+* Relationship-strength indicators
+* Historical campaign dependency patterns
 
 ---
 
@@ -359,7 +388,7 @@ Built for operational performance monitoring.
 
 # 🧮 Advanced DAX Engineering
 
-The solution includes engineered DAX measures designed for enterprise KPI tracking.
+The solution includes engineered DAX measures designed for enterprise KPI tracking, campaign intelligence monitoring, and operational performance analysis.
 
 ```DAX
 Overall Conversion Rate = 
@@ -375,7 +404,7 @@ CALCULATE(
     banking_analytical_dataset[Risk Level] = "High Risk"
 )
 
-Average Call Duration Format = 
+Average Call Duration  = 
 VAR AvgSeconds = AVERAGE(banking_analytical_dataset[call_duration_seconds])
 VAR Minutes = INT(AvgSeconds / 60)
 VAR Seconds = MOD(AvgSeconds, 60)
@@ -439,7 +468,6 @@ Python-based EDA was conducted before dashboard development.
 pandas
 numpy
 matplotlib
-plotly
 scipy
 ```
 
@@ -449,36 +477,47 @@ scipy
 
 ## 📈 Campaign Intelligence
 
-* Longer customer engagement durations showed higher conversion probability.
-* Certain campaign periods outperformed others consistently.
-* Excessive repeated outreach reduced efficiency.
+* Campaign conversion performance declined as customer contact frequency increased beyond optimal ranges, indicating the presence of contact fatigue and reduced campaign efficiency after repeated outreach attempts.
+* Cellular outreach channels demonstrated stronger conversion performance compared to traditional telephone campaigns, suggesting that customers were more responsive to mobile-based engagement methods.
+* Customers with successful previous campaign interactions showed substantially stronger future subscription probability, reinforcing the importance of relationship continuity and prior engagement trust in banking campaigns.
+* Engagement duration analysis revealed that customers with longer interaction times were significantly more likely to subscribe, indicating that deeper customer conversations were associated with higher intent and engagement quality.
+* Campaign performance varied noticeably across different periods, highlighting that customer responsiveness was influenced by campaign timing and engagement environment.
+* Conversion performance was significantly stronger in low-interest-rate environments compared to medium- and high-interest conditions, suggesting that customer willingness to subscribe was heavily influenced by broader financial and economic conditions.
 
-## 👥 Customer Intelligence
+## 👥 Customer & Occupational Intelligence
 
-* Certain occupations demonstrated significantly higher conversion rates.
-* Specific demographic groups displayed lower campaign responsiveness.
-* Loan ownership patterns influenced customer behavior.
+* Occupational groups such as administrative and technical customers demonstrated comparatively stronger conversion performance, suggesting that profession-based segmentation can improve campaign targeting efficiency.
+* The 26–35 age segment represented one of the strongest-performing customer groups in both customer concentration and conversion contribution, indicating higher responsiveness among economically active customer segments.
+* Education-level analysis revealed meaningful variation in subscription behavior across customer categories, suggesting that financial awareness and professional background may influence campaign responsiveness.
+* Marital-status segmentation showed different subscription patterns across customer groups, indicating that customer lifestyle and financial responsibility profiles likely influenced product adoption behavior.
+* Conversion trends varied across age groups, demonstrating that demographic segmentation played a significant role in customer engagement outcomes.
 
-## ⚠️ Risk Intelligence
+## ⚠️ Risk & Relationship Intelligence
 
-* Default-linked segments displayed different interaction behavior.
-* High-risk customer clusters were identifiable through segmentation.
-* Loan-heavy customer groups required differentiated strategies.
+* High-risk customer segments demonstrated elevated campaign failure behavior compared to lower-risk categories, suggesting that risk exposure influenced campaign effectiveness and engagement stability.
+* Housing-loan customers represented a significant portion of the customer base, indicating strong existing banking relationships and opportunities for targeted cross-selling strategies.
+* Loan-category distribution analysis showed that customers with different financial commitment profiles responded differently to campaigns, reinforcing the importance of personalized banking outreach.
+* Customers without successful previous campaign relationships demonstrated weaker conversion behavior overall, highlighting the importance of historical engagement quality in long-term customer conversion probability.
+* Relationship-distribution analysis indicated that previously engaged customers contributed meaningfully to campaign responsiveness, supporting the value of retention-oriented relationship strategies.
 
 ---
 
 # 🚀 Strategic Recommendations
 
-Based on analytical findings, the following recommendations were derived:
+Based on the analytical findings generated from customer intelligence, engagement behavior, campaign performance, and risk analysis, the following strategic recommendations were derived:
 
-| Recommendation                          | Business Value                |
-| --------------------------------------- | ----------------------------- |
-| Target high-conversion occupations      | Improve ROI                   |
-| Reduce excessive outreach frequency     | Lower operational cost        |
-| Personalize campaigns by demographic    | Increase engagement           |
-| Segment risk-heavy customers separately | Improve risk governance       |
-| Optimize campaign timing                | Enhance conversion efficiency |
-| Develop intelligence-driven targeting   | Better marketing allocation   |
+| Strategic Recommendation                                  | Business Justification                                                                                                          | Expected Business Impact                                                                              |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Optimize customer contact frequency thresholds            | Conversion performance declined after repeated outreach attempts, indicating contact fatigue effects.                           | Improve campaign efficiency and reduce unnecessary outreach costs                                     |
+| Prioritize high-performing occupational segments          | Administrative and technical customer groups demonstrated stronger conversion behavior.                                         | Increase targeting precision and improve subscription conversion rates                                |
+| Expand mobile-first engagement strategies                 | Cellular channels outperformed traditional telephone-based outreach in conversion effectiveness.                                | Improve customer responsiveness and campaign engagement quality                                       |
+| Develop relationship-driven retargeting campaigns         | Previously successful customers demonstrated significantly higher future conversion probability.                                | Improve retention-focused conversions and long-term customer engagement                               |
+| Personalize campaigns using demographic segmentation      | Age, education, and marital-status groups displayed different engagement and subscription behaviors.                            | Improve personalization accuracy and marketing allocation efficiency                                  |
+| Strengthen engagement-quality monitoring                  | Longer customer interaction durations were associated with higher subscription likelihood.                                      | Improve call-center effectiveness and customer interaction quality                                    |
+| Apply differentiated strategies for high-risk customers   | High-risk customer segments demonstrated elevated campaign failure behavior.                                                    | Improve operational risk governance and campaign stability                                            |
+| Leverage existing banking relationships for cross-selling | Housing-loan customers represented a significant portion of the customer base with existing banking engagement.                 | Increase product cross-selling opportunities and relationship expansion                               |
+| Improve campaign timing optimization                      | Campaign performance varied noticeably across different periods and engagement environments.                                    | Enhance outreach effectiveness and overall conversion performance                                     |
+| Align campaign strategy with interest-rate environments   | Conversion performance was substantially stronger during lower-interest-rate conditions compared to high-interest environments. | Improve campaign responsiveness and optimize financial-product positioning based on market conditions |
 
 ---
 
@@ -488,39 +527,29 @@ Based on analytical findings, the following recommendations were derived:
 
 ## 🏦 Executive Overview Dashboard
 
-<img width="1377" height="773" alt="executive_overview" src="https://github.com/user-attachments/assets/9e3b5912-7c72-4064-8492-0355b609f439" />
-
-
+<img width="100%" src="Dashboard Screenshots/executive_overview.png" />
 
 ---
 
 ## 👥 Customer & Occupational Intelligence Dashboard
 
-<img width="1373" height="772" alt="customer_intelligence" src="https://github.com/user-attachments/assets/1cb426f6-0e6e-4a03-9709-ee6a7f1bc045" />
-
-
+<img width="100%" src="Dashboard Screenshots/customer_intelligence.png" />
 
 ---
 
 ## 📞 Engagement & Contact Intelligence Dashboard
 
-<img width="1373" height="767" alt="engagement_intelligence" src="https://github.com/user-attachments/assets/cc25e657-4149-408d-9f9c-7c44fe11fac8" />
-
-
+<img width="100%" src="Dashboard Screenshots/engagement_intelligence.png" />
 
 ---
 
 ## ⚠️ Relationship & Risk Intelligence Dashboard
 
-<img width="1371" height="766" alt="relationship_risk_intelligence" src="https://github.com/user-attachments/assets/6753c4ed-ed1a-40d7-862f-fdbff56f701d" />
-
-
+<img width="100%" src="Dashboard Screenshots/relationship_risk_intelligence.png" />
 
 </div>
 
 ---
-
-# 📸 Dashboard Preview
 
 ## 🏦 Executive Overview Dashboard
 
@@ -641,9 +670,11 @@ Enterprise-Banking-Analytics/
 ├── 📁 Dataset/
 │   └── bank.csv
 │
-├── 📁 Assets/
-│   ├── icons/
-│   └── banking_theme/
+├── 📁 Dashboard Screenshots/
+│   ├── executive_overview.png
+│   ├── customer_intelligence.png
+│   ├── engagement_intelligence.png
+│   └── relationship_risk_intelligence.png
 │
 └── 📄 README.md
 ```
@@ -702,6 +733,11 @@ The final solution simulates how modern banks can leverage analytics to improve 
 ### Aspiring Data Analyst | Power BI Developer | Banking Analytics Enthusiast
 
 Passionate about transforming raw business data into strategic decision intelligence through analytics, visualization, and enterprise reporting solutions.
+
+### Connect With Me
+
+* 🔗 GitHub: Add Your GitHub Profile Link
+* 💼 LinkedIn: Add Your LinkedIn Profile Link
 
 ### Core Focus Areas
 
