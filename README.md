@@ -527,25 +527,30 @@ Based on the analytical findings generated from customer intelligence, engagemen
 
 ## 🏦 Executive Overview Dashboard
 
-<img width="100%" src="Dashboard Screenshots/executive_overview.png" />
+<img width="1377" height="773" alt="executive_overview" src="https://github.com/user-attachments/assets/ed1bb590-8e8c-4c76-b118-7e19449326e3" />
+
 
 ---
 
 ## 👥 Customer & Occupational Intelligence Dashboard
 
-<img width="100%" src="Dashboard Screenshots/customer_intelligence.png" />
+<img width="1373" height="772" alt="customer_intelligence" src="https://github.com/user-attachments/assets/623d8dc6-912c-4676-ad65-b171276b7b65" />
+
 
 ---
 
 ## 📞 Engagement & Contact Intelligence Dashboard
 
-<img width="100%" src="Dashboard Screenshots/engagement_intelligence.png" />
+<img width="1373" height="767" alt="engagement_intelligence" src="https://github.com/user-attachments/assets/ec6f7645-c749-4d93-b0a0-65c5e695087d" />
+
 
 ---
 
 ## ⚠️ Relationship & Risk Intelligence Dashboard
 
-<img width="100%" src="Dashboard Screenshots/relationship_risk_intelligence.png" />
+<img width="1371" height="766" alt="relationship_risk_intelligence" src="https://github.com/user-attachments/assets/c466922b-c3d0-4aec-bb8e-df78603844a4" />
+
+
 
 </div>
 
