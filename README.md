@@ -741,8 +741,8 @@ Passionate about transforming raw business data into strategic decision intellig
 
 ### Connect With Me
 
-* 🔗 GitHub: Add Your GitHub Profile Link
-* 💼 LinkedIn: Add Your LinkedIn Profile Link
+* 🔗 GitHub: https://github.com/RajeevDhami
+* 💼 LinkedIn: www.linkedin.com/in/rajeev-dhami-994552107
 
 ### Core Focus Areas
 
