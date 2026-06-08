@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🏦 Enterprise Banking Customer Intelligence & Campaign Analytics Platform
+# 🏦 Banking Customer Intelligence & Campaign Analytics Platform
 
-### Enterprise Decision Intelligence • Campaign Optimization • Customer Segmentation • Risk Analytics
+###  Decision Intelligence • Campaign Optimization • Customer Segmentation • Risk Analytics
 
 <img src="https://img.shields.io/badge/Power%20BI-Enterprise%20Analytics-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
 <img src="https://img.shields.io/badge/SQL-Data%20Engineering-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
@@ -757,7 +757,7 @@ Passionate about transforming raw business data into strategic decision intellig
 
 <div align="center">
 
-# ⭐ Enterprise Banking Analytics Project
+# ⭐ Banking Analytics Project
 
 ### Built with a strong focus on real-world analytical thinking, enterprise reporting standards, and decision intelligence 🚀
 
